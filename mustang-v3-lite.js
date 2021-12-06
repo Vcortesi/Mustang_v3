@@ -293,7 +293,7 @@ function showLookup(){
     }
 
 }
-
+// USED FROM EXAMPLE CODE
 function loadContactsFromServer() {
     console.log("loadContactsFromServer()");
     contactArray.length = 0;
@@ -310,7 +310,7 @@ function loadContactsFromServer() {
     xmlhttp.open("GET", "load-contacts.php", true);
     xmlhttp.send();   
 }
-
+// USED FROM EXAMPLE CODE
 function saveContactsToServer() {
     console.log("saveContactsToServer()");
     xmlhttp = new XMLHttpRequest();
