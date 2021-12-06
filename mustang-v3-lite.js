@@ -131,6 +131,11 @@ function logContacts() {
 }
 
 function initApplication() {
+    alert("Load New Index & Contacts - Loads Index and Contacts from given URL"+
+    "\nNext & Previous - Navigate through the list of contacts"+
+    "\nNew - Create a new contact"+
+    "\nDelete & Save - Delete a contact or Save current contacts"+
+    "\nLoad Prev Index & Contacts - Loads contacts that were saved")
     console.log('mustang v3!!!');
 }
 
