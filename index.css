@@ -2,8 +2,8 @@
 body { 
   font-family:monospace;
   font-size: 13pt;
-  background-color: #1c2021;
-  color: #3cff00;
+  background-color: #030303;
+  color: #b11a1a;
  }
 .autocomplete {
   /*the container must be positioned relative:*/

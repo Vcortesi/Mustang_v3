@@ -100,20 +100,19 @@ function autoFill() {
 
 // This index function needs to make two different calls as using 'JSON.stringify' on the response.json() does not format correctly via console.
 async function index() {
+    document.getElementById("index").disabled = true;
     const response = await fetch("https://mustangversion1.azurewebsites.net/index.json");
     const contactIndex = await response.text(); // fetches a text version of the index 
-
     console.log("Index JSON:\n\n" + contactIndex);
-    
-
     const response2 = await fetch("https://mustangversion1.azurewebsites.net/index.json");
     const contactIndexJ = await response2.json(); // fetches a json version of the index
-
+ 
     for (i=0; i<contactIndexJ.length; i++) {
         contactURLArray.push(contactIndexJ[i].ContactURL);
     }
-   
     contactR();
+   
+    
 }
 
 // This contactR function follows the same layout as mustang-lite
