@@ -321,6 +321,10 @@ function saveContactsToServer() {
     xmlhttp.send("contacts=" + JSON.stringify(contactArray));   
 }
 
+function setStatus(status) {
+    document.getElementById("statusID").innerHTML = status;    
+}
+
 
 
 
